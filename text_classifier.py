@@ -93,9 +93,6 @@ def stemming(text: str) -> str:
     stemming_text = ' '.join(list(map(russian_stemmer.stem, text.split())))
     return stemming_text
 
-# pd.set_option('display.max_columns', 3)
-# pd.set_option('display.max_colwidth', 100)
-
 
 def preprocess_data(data: pd.DataFrame):
     """
